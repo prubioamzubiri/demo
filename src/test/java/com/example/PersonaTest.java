@@ -21,7 +21,7 @@ public class PersonaTest {
         instance.setAlive(true);
         instance.hBirthday();
         
-        int expResultA = initAge + 1;
+        int expResultA = initAge++;
         int resultA = instance.getAge();        
         
         assertEquals(expResultD, resultD);
