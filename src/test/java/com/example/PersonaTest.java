@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.Random;
 
+import org.junit.Test;
+
 public class PersonaTest {
 
     @org.junit.Test
@@ -26,6 +28,25 @@ public class PersonaTest {
         
         assertEquals(expResultD, resultD);
         assertEquals(expResultA, resultA);
+    }
+
+    @Test
+    public void testGetAge() {
+        
+        assertEquals(true, true);
+
+    }
+
+    @Test
+    public void testGetId() {
+        
+        assertEquals(true, false);
+    }
+
+    @Test
+    public void testGetName() {
+        
+        assertEquals(true, false);
     }
 
 }
