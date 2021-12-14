@@ -1,4 +1,4 @@
-package com.example.Dominio;
+package com.example.dominio;
 
 public class Persona {
     

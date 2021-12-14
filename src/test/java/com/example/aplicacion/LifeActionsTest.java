@@ -1,7 +1,8 @@
-package com.example.Aplicacion
-;
+package com.example.aplicacion;
 
 import static org.junit.Assert.assertEquals;
+
+import com.example.dominio.Persona;
 
 import org.junit.Test;
 
