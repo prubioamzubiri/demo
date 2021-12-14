@@ -27,11 +27,12 @@ public class TextBD implements IGBD{
     public TextBD(File f) throws IOException, InvalidAttributeValueException
     {
         datos = new HashMap<String, Persona>();
+        BufferedReader br;
 
         try {
 
             FileReader fr = new FileReader(f);
-            BufferedReader br = new BufferedReader(fr);
+            br = new BufferedReader(fr);
 
             String readed;
             Persona persona;
@@ -58,6 +59,8 @@ public class TextBD implements IGBD{
                 {
                     datos.put(sep[0], persona);
                 }
+
+                br.close();
                 
             }
 
@@ -93,15 +96,16 @@ public class TextBD implements IGBD{
         
     }
 
-    public void save()
+    public void save() throws IOException
     {
 
         File file = new File("datos.txt");
         Persona persona;
+        BufferedWriter bw;
 
         try {
             FileWriter fw = new FileWriter(file);
-            BufferedWriter bw = new BufferedWriter(fw);
+            bw = new BufferedWriter(fw);
 
             Set<String> keys = datos.keySet();
 
@@ -115,6 +119,7 @@ public class TextBD implements IGBD{
                 bw.newLine();
             }
 
+            bw.close();
 
         } catch (IOException e) {
             e.printStackTrace();
