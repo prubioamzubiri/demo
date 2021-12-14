@@ -71,7 +71,13 @@ public class TextBD implements IGBD{
     @Override
     public Persona getPersona(String id) {
 
-        return datos.get(id);
+        Persona to_return = null;
+
+        if(datos.containsKey(id))
+        {
+            to_return = datos.get(id);
+        }
+        return to_return;
 
     }
 
