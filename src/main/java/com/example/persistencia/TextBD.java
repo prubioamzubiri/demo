@@ -137,4 +137,13 @@ public class TextBD implements IGBD{
         }
     }
 
+    @Override
+    public void updatePersona(Persona persona) {
+        
+        String id = persona.getId();
+
+        datos.put(id, persona);
+   
+    }
+
 }

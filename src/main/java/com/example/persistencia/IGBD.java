@@ -12,5 +12,7 @@ public interface IGBD {
     public Persona getPersona(String id);
 
     public void addPersona(Persona persona);
+
+    public void updatePersona(Persona persona);
     
 }
