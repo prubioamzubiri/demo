@@ -1,4 +1,4 @@
-package com.example;
+package com.example.Dominio;
 
 import static org.junit.Assert.assertEquals;
 
