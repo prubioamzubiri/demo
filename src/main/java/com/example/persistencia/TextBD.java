@@ -105,7 +105,7 @@ public class TextBD implements IGBD{
     public void save() throws IOException
     {
 
-        File file = new File("datos.txt");
+        File file = new File("./datos.txt");
         Persona persona;
         BufferedWriter bw = null;
 
